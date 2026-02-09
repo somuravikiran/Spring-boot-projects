@@ -1,0 +1,8 @@
+package com.project.Exception_handling.Repository;
+
+import com.project.Exception_handling.model.CloudVendor;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CloudVendorRepository extends JpaRepository<CloudVendor,String> {
+
+}
