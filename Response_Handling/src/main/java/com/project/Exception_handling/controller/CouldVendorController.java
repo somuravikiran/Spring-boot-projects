@@ -1,6 +1,6 @@
 package com.project.Exception_handling.controller;
 
-import com.project.Exception_handling.Repository.rsponce.ResponseHandler;
+import com.project.Exception_handling.Repository.responce.ResponseHandler;
 import com.project.Exception_handling.Service.CloudVendorService;
 import com.project.Exception_handling.model.CloudVendor;
 import org.springframework.http.HttpStatus;

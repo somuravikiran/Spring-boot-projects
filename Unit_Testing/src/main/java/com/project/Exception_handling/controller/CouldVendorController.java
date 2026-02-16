@@ -1,7 +1,10 @@
 package com.project.Exception_handling.controller;
 
+import com.project.Exception_handling.Repository.responce.ResponseHandler;
 import com.project.Exception_handling.Service.CloudVendorService;
 import com.project.Exception_handling.model.CloudVendor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,8 +25,8 @@ public class CouldVendorController {
     }
 
     @GetMapping("{vendorId}")
-    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
-        return cloudVendorServiceImpl.getCloudVendorDetails(vendorId);
+    public ResponseEntity<Object> getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
+        return ResponseHandler.responseBuilder("Requested vendor details are given here", HttpStatus.OK, cloudVendorServiceImpl.getCloudVendorDetails(vendorId));
     }
 
     @PostMapping

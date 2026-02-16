@@ -1,4 +1,4 @@
-package com.project.Exception_handling.Repository.rsponce;
+package com.project.Exception_handling.Repository.responce;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
